@@ -70,7 +70,7 @@
       </div>    
   </div>
   <div class="grand-mother">
-    
+
   </div>
   <script>
     
@@ -92,9 +92,14 @@
             slideIcon.classList.remove("active");
         })
         slideNumber++;
-        if(slideNumber > (numberOfSlides - 1)){
+        
+        if(slideNumber === numberOfSlides){ 
             slideNumber = 0;
         }
+
+        // if(slideNumber > (numberOfSlides - 1)){ 
+        //     slideNumber = 0;
+        // }
 
         slides[slideNumber].classList.add("active");
         slideIcons[slideNumber].classList.add("active");
